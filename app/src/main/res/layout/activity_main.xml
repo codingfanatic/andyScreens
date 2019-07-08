@@ -7,31 +7,19 @@
     android:layout_height="match_parent"
     tools:context="com.example.andyscreens.MainActivity">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="Ganesh"
-        android:text="click third activity"
-        android:textColor="@color/colorPrimary"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="168dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/text"
-        android:layout_marginBottom="196dp" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This s my first app!"
+        android:text="This is my first app!"
         android:id="@+id/text"
         tools:layout_editor_absoluteY="8dp"
         tools:layout_editor_absoluteX="8dp" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button"
-        android:text="click second activity"
+        android:text="Second Activity"
         android:textColor="@color/colorPrimary"
         android:onClick="Ganesh"
         tools:layout_editor_absoluteX="168dp"
@@ -39,5 +27,20 @@
         android:layout_above="@+id/button2"
         android:layout_alignStart="@+id/button2"
         android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Ganesh"
+        android:text="Third Activity"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="168dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/text"
+        android:layout_marginBottom="196dp" />
+
+
 
 </RelativeLayout>
