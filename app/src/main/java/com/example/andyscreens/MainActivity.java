@@ -21,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void Ganesh(View View) {
         String button_text;
+
+        //Casts the View object as a Button
+        // Uses the getText() getter method to obtain text in the button
+        // Uses the toString() method to return text as a String
+        // If the text reads Second Activity, create an Intent for starting the secondAct Activity
+        // Else, if it reads Third Activity, repeat for the thirdAct Activity
         button_text =((Button)View).getText().toString();
         if(button_text.equals("Second Activity")) {
             //Instantiate an Intent called secondAct using the SecondActivity class
